@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/DH.PNG.png">
+    
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Load map styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+    <!-- CSS   -->
+    <style>
+       .myDiv {
+    border-radius: 5px;
+    background-color: lightblue;    
+    padding-top:2%;
+    margin: 3%;
+    width: 80%;
+    height:265PX;
+    background-color: #E9EEF5;
+    
+    
+     }
+
+     img{
+        width:350px;
+        height: 200px;
+        border-radius: 5px;
+        margin-right: 2%;
+        margin-left: 2%;
+        
+        
+     }
+
+     .slidein {
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 10%;            
+        }
+
+        .button1 {
+            background-color: #4CAF50; 
+            color: white; 
+             border: 2px solid #4CAF50;
+        
+        }
+
+        .button1:hover {
+            background-color:green;
+            color: white;
+        }
+
+
+    </style>
+</head>
+
+<body background="#E9EEF5">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Dream House | DH
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="casas.html">Venta de Casas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="requisitos.html">Requisitos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+                
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+   <br><br><center>
+    <h1  id="watchme"><b>Renta de casas</b></h1>
+   </center>
+   
+    <center><div class="myDiv">
+        <img src="assets/img/renta1.jpg" align="left">
+        <h4 align="left">CASA EN RENTA EN FRACCIONAMIENTO ALTARIA</h4>
+        <p align="left" >UBICACI&Oacute;N:  Fraccionamiento Vista del Valle, Juárez, Chihuahua</p>
+        <p align="left">ELEMENTOS: 3 recámaras</p>
+        <p align="left">TERRENO: 111 m²</p>
+        <p align="left">PRECIO: $ 30,000 MXN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.lamudi.com.mx/detalle/41032-73-bfecc95e9e81-2dc5-f81455a-9da6-3ab7">
+            <button class="button button1">Rentar</button></a></p>
+    </div></center>
+
+    
+    <center><div class="myDiv">
+        <img src="assets/img/renta2.png" align="left">
+        <h4 align="left">CASA EN RENTA CERCA DE CAMPOS EL&Iacute;SEOS</h4>
+        <p align="left" >UBICACI&Oacute;N:  Cerca de Campos Eliseos Juárez, Chihuahua</p>
+        <p align="left">ELEMENTOS: 3 recámaras, 2 baños, 1 medios baños</p>
+        <p align="left">TERRENO: 1,000 m²</p>
+        <p align="left">PRECIO: $ 36,500 MXN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.lamudi.com.mx/detalle/41032-73-dbea8e347030-ab27-c4e3b327-9071-470a">
+            <button class="button button1">Rentar</button></a></p>
+    </div></center>
+
+    
+    <center><div class="myDiv">
+        <img src="assets/img/renta3.jpg" align="left">
+        <h4 align="left">CASA EN RENTA EN FRACCIONAMIENTO PUESTA DEL SOL</h4>
+        <p align="left" >UBICACI&Oacute;N:  Puesta del Sol, Juárez, Chihuahua</p>
+        <p align="left">ELEMENTOS: 4 recámaras, 3 baños</p>
+        <p align="left">TERRENO: 230 m²</p>
+        <p align="left">PRECIO: $ 44,000 MXN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.lamudi.com.mx/detalle/41032-73-adf610c7deec-ef64-dbd37d3c-8b12-33d8">
+            <button class="button button1">Rentar</button></a></p>
+    </div></center>
+
+    <center><div class="myDiv">
+        <img src="assets/img/renta4.jpg" align="left">
+        <h4 align="left">CASA EN RENTA EN CAMPESTRE ARBOLEDA</h4>
+        <p align="left" >UBICACI&Oacute;N:  Fraccionamiento Fovissste Chamizal, Juárez, Chihuahua</p>
+        <p align="left">ELEMENTOS: 4 recámaras, 3 baños</p>
+        <p align="left">TERRENO: 421 m²</p>
+        <p align="left">PRECIO: $ 54,000 MXN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.lamudi.com.mx/detalle/41032-73-520f4ab35b7c-a350-a7939756-8ce2-3862">
+            <button class="button button1">Rentar</button></a></p>
+    </div></center>
+
+    <center><div class="myDiv">
+        <img src="assets/img/renta5.png" align="left">
+        <h4 align="left">CASA EN RENTA EN RINCONES DEL CAMPESTRE</h4>
+        <p align="left" >UBICACI&Oacute;N:  Fracc Residencial Campestre Senecú, Juárez, Chihuahua</p>
+        <p align="left">ELEMENTOS: 3 recámaras, 3 baños, 1 medios baños</p>
+        <p align="left">TERRENO: N/A</p>
+        <p align="left">PRECIO: $ 60,000 MXN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.lamudi.com.mx/detalle/41032-73-fbe47e7fba82-d5ef-7abd5bb4-b0e7-41c9">
+            <button class="button button1">Rentar</button></a></p>
+    </div></center>
+
+    <center><div class="myDiv">
+        <img src="assets/img/renta6.jpg" align="left">
+        <h4 align="left">CASA EN RENTA EN PRIVADA DE MIRALOMA</h4>
+        <p align="left" >UBICACI&Oacute;N:  Fraccionamiento Privada de Miraloma Juárez, Chihuahua</p>
+        <p align="left">ELEMENTOS: 3 recámaras, 3 baños</p>
+        <p align="left">TERRENO: N/A</p>
+        <p align="left">PRECIO: $ 30,000 MXN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.lamudi.com.mx/detalle/41032-73-4bbb480e1dfe-10e1-7f0d39ae-b0df-3fc8">
+            <button class="button button1">Rentar</button></a></p>
+    </div></center>
+
+    <center><div class="myDiv">
+        <img src="assets/img/renta7.png" align="left">
+        <h4 align="left">CASA EN RENTA EN CERRADA DE LA VEREDA</h4>
+        <p align="left" >UBICACI&Oacute;N:  Fracc Rincones de Santa Fe, Juárez, Chihuahua</p>
+        <p align="left">ELEMENTOS: 3 recámaras, 2 baños</p>
+        <p align="left">TERRENO: N/A</p>
+        <p align="left">PRECIO: $ 25,000 MXN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.lamudi.com.mx/detalle/41032-73-f17a6932de22-9c7a-55c88d25-8f3e-38d8">
+            <button class="button button1">Rentar</button></a></p>
+    </div></center>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dream House | DH</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">656-375-42-91</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">Dreamhouse@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" >Venta de casas</a></li>
+                        <li><a class="text-decoration-none" >Renta de casas</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2023 Dream House 
+                            | Designed by Ana Paulina Barraza Reyes | IDSM21 | Cuatrimestre Mayo-Agosto | <a rel="sponsored" href="https://www.utcj.edu.mx" target="_blank"> Universidad Tecnológica de Ciudad Juárez   </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+<script>
+    var e = document.getElementById("watchme");
+    e.addEventListener("animationstart", listener, false);
+    e.addEventListener("animationend", listener, false);
+    e.addEventListener("animationiteration", listener, false);
+
+    e.className = "slidein";
+
+    function listener(e) {
+        var l = document.createElement("li");
+        switch (e.type) {
+            case "animationstart":
+                l.innerHTML = "Iniciado: tiempo transcurrido " + e.elapsedTime;
+                break;
+            case "animationend":
+                l.innerHTML = "Finalizado: tiempo transcurrido " + e.elapsedTime;
+                break;
+            case "animationiteration":
+                l.innerHTML = "Nueva iteración comenzó a los " + e.elapsedTime;
+                break;
+        }
+        document.getElementById("output").appendChild(l);
+    }
+</script>
+
+
+</html>

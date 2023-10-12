@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/DH.PNG.png">
+
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Load map styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!-- CSS   -->
+    <style>
+        .myDiv {
+            border-radius: 5px;
+            background-color: lightblue;
+            padding-top: 2%;
+            margin: 3%;
+            width: 80%;
+            height: 265PX;
+            background-color: #E9EEF5;
+
+
+        }
+
+        img {
+            width: 350px;
+            height: 200px;
+            border-radius: 5px;
+            margin-right: 2%;
+            margin-left: 2%;
+
+
+        }
+
+        .slidein {
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 10%;
+        }
+
+        .button1 {
+            background-color: #4CAF50;
+            color: white;
+            border: 2px solid #4CAF50;
+
+        }
+
+        .button1:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body background="#E9EEF5">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Dream House | DH
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="departamentos.html">Renta de Camionetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="requisitos.html">Requisitos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    </nav>
+    <!-- Close Header -->
+
+    <br><br>
+    <center>
+        <h1 id="watchme"><b>Renta de Carros</b></h1>
+    </center>
+
+    <center>
+        <div class="myDiv">
+            <img src="assets/img/carro1.jpg" align="left">
+            <h4 align="left">Tesla Model 3</h4>
+            <p align="left">El Tesla Model 3 es una berlina de dimensiones compactas y 100% eléctrica, del segmento D,
+                fabricada por Tesla desde 2016. Actualmente se comercializa la primera generación, lanzada en España a
+                finales de 2018. El Tesla Model 3 se caracteriza por contar con una gran batería de iones de litio que
+                le proporciona una autonomía entre 513 y 629 kilómetros, dependiendo de la versión. Se fabrica en la
+                plantas de Tesla en Shanghai y en California. Y su precio estimado es de: $ 881,900 MXN
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.lamudi.com.mx/detalle/41032-73-edd9ee6b4508-d1c1-36f30ab2-b82c-4bbc">
+                    <button class="button button1">Rentar</button></a>
+            </p>
+        </div>
+    </center>
+
+
+    <center>
+        <div class="myDiv">
+            <img src="assets/img/carro2.jpg" align="left">
+            <h4 align="left">Jac E 10X</h4>
+            <p align="left">Este pequeño auto, es realmente interesante, ya que se trata de un urbano carismático y
+                colorido, que es uno de los primeros productos de la alianza que tienen JAC y Volkswagen en China. De
+                hecho, en el gigante asiático, se vende bajo la marca Sol, especializada, en vehículos cero emisiones.
+                El JAC E10X es el auto eléctrico más barato de México, ya que su precio estimado es de : $ 439,000 MXN
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.lamudi.com.mx/detalle/41032-73-cac453b8bd9f-9aa1-fe057417-930d-3996">
+                    <button class="button button1">Rentar</button></a>
+            </p>
+        </div>
+    </center>
+
+
+    <center>
+        <div class="myDiv">
+            <img src="assets/img/carro3.jpg" align="left">
+            <h4 align="left">Audi e-tron GT</h4>
+            <p align="left">El RS e-tron GT, segundo modelo 100% eléctrico de Audi. Está fuertemente emparentado con el
+                Porsche Taycan, vamos comparten toda la parte mecánica; plataforma, baterías, sistema eléctrico, y
+                motores. Tiene espacio para toda la familia y su equipaje, y además puede hacer el 0 a 100 km/h en 3.3
+                segundos. Anuncia 472 km de autonomía. Y su precio estimado es de: $ 3,324,900 MXN
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.lamudi.com.mx/detalle/41032-73-19367b36aa9c-d7ad-addc3fb1-a4ee-4dd8">
+                    <button class="button button1">Rentar</button></a>
+            </p>
+        </div>
+    </center>
+
+
+    <center>
+        <div class="myDiv">
+            <img src="assets/img/carro4.jpg" align="left">
+            <h4 align="left">Jac E J7</h4>
+            <p align="left">JAC J7 cuenta con un rango de 492 kilómetros de autonomía, un amplio abanico de tecnología y
+                seguridad, enmarcados en el mismo diseño de carrocería que el modelo a combustión, JAC J7. El motor
+                eléctrico del JAC E J7 se abastece mediante una una batería de ion-litio con capacidad de 55 kWh; cuenta
+                con seis bolsas de aire, así como diversos sistemas de seguridad activa y pasiva. Su precio ronda entre
+                los: $ 730,000 MXN
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.lamudi.com.mx/detalle/41032-73-bc7f4ae09594-d2e6-92e3d807-b19c-491b">
+                    <button class="button button1">Rentar</button></a>
+            </p>
+        </div>
+    </center>
+
+
+    <center>
+        <div class="myDiv">
+            <img src="assets/img/carro5.jpg" align="left">
+            <h4 align="left">Chevrolet Bolt SUV</h4>
+            <p align="left">La primera SUV 100% eléctrica de Chevrolet. Comparte componentes mecánicos y batería con el
+                Bolt EV, tiene paneles de carrocería completamente distintos, asimismo, es 152 mm más larga de los
+                cuales 76 mm son ganancia en la banca trasera. En cuanto al equipamiento, destaca el uso de una pantalla
+                más grande y de mejor resolución en comparación con la que ofrece el Bolt EV. PRECIO: $ 989,400 MXN
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.lamudi.com.mx/detalle/41032-73-397e9725b20a-4a5f-d554aaf-a1e0-403e">
+                    <button class="button button1">Rentar</button></a>
+            </p>
+        </div>
+    </center>
+
+
+    <center>
+        <div class="myDiv">
+            <img src="assets/img/carro6.jpg" align="left">
+            <h4 align="left">Porshe Taycan S</h4>
+            <p align="left">El primer eléctrico de Porsche es una de las nuevas maravillas de la industria automotriz.
+                Acelera de 0 a 100 km/h en 2.8 segundos y a 200 km/h en 9.8 segundos, mientras que el cuarto de milla lo
+                consigue en 11.1 segundos. Además, es capaz de generar 1.0 g. Todavía más sorprendente resulta, que
+                logre estas cifras considerando que pesa 2.3 toneladas. Y su precio es de: $ 2,478,000 MXN
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.lamudi.com.mx/detalle/41032-73-21796fea2804-e8a4-642a1f62-854f-3e83">
+                    <button class="button button1">Rentar</button></a>
+            </p>
+        </div>
+    </center>
+
+
+    <center>
+        <div class="myDiv">
+            <img src="assets/img/carro7.jpg" align="left">
+            <h4 align="left">Volvo XC40 Recharge</h4>
+            <p align="left">El XC40 Recharge Pure Electric, es el primer vehículo 100 eléctrico de la marca. En su
+                fabricación ha usado materiales sustentables como con la alfombra interior que está hecha completamente
+                de plástico reciclado. La potencia es equivalente a 408 hp, misma que le confiere una aceleración de 0 a
+                100 km/h en tan solo 4.9 segundos. Su precio es de: $ 1,189,900 MXN
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.lamudi.com.mx/detalle/41032-73-63af34e3ee3d-7294-41a832d7-9dc9-48e8">
+                    <button class="button button1">Rentar</button></a>
+            </p>
+        </div>
+    </center>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dream House | DH</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">656-375-42-91</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">Dreamhouse@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none">Renta de Carros</a></li>
+                        <li><a class="text-decoration-none">Renta de Camionetas</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                                    class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank"
+                                href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
+                                    class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank"
+                                href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
+                            placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2023 Dream House
+                            | Designed by Ana Paulina Barraza Reyes | IDSM21 | Cuatrimestre Mayo-Agosto | <a
+                                rel="sponsored" href="https://www.utcj.edu.mx" target="_blank"> Universidad Tecnológica
+                                de Ciudad Juárez </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+<script>
+    var e = document.getElementById("watchme");
+    e.addEventListener("animationstart", listener, false);
+    e.addEventListener("animationend", listener, false);
+    e.addEventListener("animationiteration", listener, false);
+
+    e.className = "slidein";
+
+    function listener(e) {
+        var l = document.createElement("li");
+        switch (e.type) {
+            case "animationstart":
+                l.innerHTML = "Iniciado: tiempo transcurrido " + e.elapsedTime;
+                break;
+            case "animationend":
+                l.innerHTML = "Finalizado: tiempo transcurrido " + e.elapsedTime;
+                break;
+            case "animationiteration":
+                l.innerHTML = "Nueva iteración comenzó a los " + e.elapsedTime;
+                break;
+        }
+        document.getElementById("output").appendChild(l);
+    }
+</script>
+
+
+</html>
