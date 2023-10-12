@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/DH.PNG.png">
+    
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Load map styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+    <!-- CSS   -->
+    <style>
+       .myDiv {
+    border-radius: 5px;
+    background-color: lightblue;    
+    padding:4%;
+    margin: 3%;
+    width: 80%;
+    height:auto;
+    background-color: #E9EEF5;
+    
+    
+     }
+
+     img{
+        width:300Px;
+        height: 300px;
+        margin-right:5%;
+        margin-left: 5%;
+        
+        
+     }
+
+     .slidein {
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 10%;            
+        }
+
+        .button1 {
+            background-color: #4CAF50; 
+            color: white; 
+             border: 2px solid #4CAF50;
+        
+        }
+
+        .button1:hover {
+            background-color:green;
+            color: white;
+        }
+
+
+    </style>
+</head>
+
+<body background="#E9EEF5">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Dream House | DH
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="casas.html">Venta de Casas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="departamentos.html">Renta de Casas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+                
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+   <br><br> 
+    <center><div class="myDiv">
+        <h1 align="center">Requisitos</h1>
+        <p>A continuación se muestran los requisitos necesarios para realizar transacciones de compra-venta dentro de nuestra plataforma (compréndase según sea el caso de comprador o vendedor).</p>
+        <img src="assets/img/casaLogo.png" align="left">
+        <br> <br>
+        <UL align="left">
+            <LI>Mantener el debido respeto al realizar cualquier tipo de comunicación </LI>
+            <li>Antes de realizar cualquier transacción los involucrados deben mostrar sus identificaciones </li>
+            <LI>Cumplir con las reglas establecidas por el dueño del recinto</LI>
+            <LI>Leer y comprender los contratos de compra-venta antes de firmar</LI>
+            <LI>Para cualquier aclaración acerca del contrato, favor de contactar con los encargados directos de la realización del contrato</LI>
+            <LI>Realizar los pagos acordes lo establece el contrato, en caso de tener algún inconveniente se recomienda contactar al encargado del recinto min 1 semana antes del pago </LI>
+        </UL>
+    </div>
+    </center>
+    <br><br><br><br>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Dream House | DH</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">656-375-42-91</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">Dreamhouse@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" >Venta de casas</a></li>
+                        <li><a class="text-decoration-none" >Renta de casas</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2023 Dream House 
+                            | Designed by Ana Paulina Barraza Reyes | IDSM21 | Cuatrimestre Mayo-Agosto | <a rel="sponsored" href="https://www.utcj.edu.mx" target="_blank"> Universidad Tecnológica de Ciudad Juárez   </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+<script>
+    var e = document.getElementById("watchme");
+    e.addEventListener("animationstart", listener, false);
+    e.addEventListener("animationend", listener, false);
+    e.addEventListener("animationiteration", listener, false);
+
+    e.className = "slidein";
+
+    function listener(e) {
+        var l = document.createElement("li");
+        switch (e.type) {
+            case "animationstart":
+                l.innerHTML = "Iniciado: tiempo transcurrido " + e.elapsedTime;
+                break;
+            case "animationend":
+                l.innerHTML = "Finalizado: tiempo transcurrido " + e.elapsedTime;
+                break;
+            case "animationiteration":
+                l.innerHTML = "Nueva iteración comenzó a los " + e.elapsedTime;
+                break;
+        }
+        document.getElementById("output").appendChild(l);
+    }
+</script>
+
+
+</html>
